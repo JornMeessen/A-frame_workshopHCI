@@ -1,19 +1,13 @@
 
 
-// changing individual properties with code and using setInterval
-
-//var rotationSpeed = -0.05;
-var yas = 0.01;
-var xas = -0.05;
-var zas = 0.05;
-var color;
+var rotationSpeed = -0.05;
 var myOtherBox = document.getElementById('myOtherBox');
 
 function spin(){
-	myOtherBox.object3D.rotation.x += xas;
-	myOtherBox.object3D.rotation.y += yas;
-	myOtherBox.object3D.rotation.z += zas;
-	console.log(myOtherBox.object3D.rotation.x, myOtherBox.object3D.rotation.y, myOtherBox.object3D.rotation.z, myOtherBox.object3D.color);
+	myOtherBox.object3D.rotation.x += rotationSpeed;
+	myOtherBox.object3D.rotation.y += rotationSpeed;
+	myOtherBox.object3D.rotation.z += rotationSpeed/2;
+	console.log(myOtherBox.object3D.rotation);
 }
 
 setInterval(spin, 16); //equivalent to 60 fps
