@@ -2,7 +2,6 @@
 
 // changing individual properties with code and using setInterval
 var rotationSpeed = 0.01;
-var x = -180;
 var myOtherBox = document.getElementById('myOtherBox');
 
 function spin(){
