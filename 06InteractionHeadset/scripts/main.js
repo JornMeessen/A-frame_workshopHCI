@@ -43,7 +43,7 @@ function growleave(){
 	myOtherBox.object3D.scale.z -= growspeed;
 }
 
-myOtherBox.addEventListener('click', function(){ // uses a fuse
+myOtherBox.addEventListener('mouseover', function(){ // uses a fuse
 	grow();
 	console.log('grew');
 });
